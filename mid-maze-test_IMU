@@ -205,8 +205,7 @@ void loop()
     if(left_sonar>=WALL_GAP_DISTANCE)
     {
       motor_A_control(HIGH,110); 
-      motor_B_control(HIGH,255); 
-      delay(270);                              //직진           
+      motor_B_control(HIGH,255);                               //직진           
          
       compass.read();
       heading = compass.heading();
